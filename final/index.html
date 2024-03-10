@@ -7,19 +7,27 @@
 </head>
 <body>
     <div id="main">
-        <svg width="680" height="600" style="border: 1px solid #777;"></svg>
-
-        <div id="cityCheckboxes">
-            <label><input type="checkbox" value="CLT" checked>CLT</label>
-            <label><input type="checkbox" value="CQT" >CQT</label>
-            <label><input type="checkbox" value="IND" >IND</label>
-            <label><input type="checkbox" value="JAX" >JAX</label>
-            <label><input type="checkbox" value="MDW" checked>MDW</label>
-            <label><input type="checkbox" value="PHL" >PHL</label>
-            <label><input type="checkbox" value="PHX" >PHX</label>
+        <div id="data">
+            <svg width="680" height="600" style="border: 1px solid #777;"></svg>
+            <svg id="precipitation" width="680" height="600" style="border: 1px solid #777;"></svg>
+        </div>
+        <div class="side-panel">
+            <div id="legend">
+                <h3>Cities</h3>
+            </div>
+            <div id="cityCheckboxes">
+                <label><input type="checkbox" value="CLT" checked>CLT</label>
+                <label><input type="checkbox" value="CQT" >CQT</label>
+                <label><input type="checkbox" value="IND" >IND</label>
+                <label><input type="checkbox" value="JAX" >JAX</label>
+                <label><input type="checkbox" value="MDW" checked>MDW</label>
+                <label><input type="checkbox" value="PHL" >PHL</label>
+                <label><input type="checkbox" value="PHX" >PHX</label>
+            </div>
         </div>
     </div>
 </body>
 <script src="https://d3js.org/d3.v5.min.js"></script>
+<script src="./d3-tip.js"></script>
 <script src="./final.js"></script>
 </html>
